@@ -1,6 +1,8 @@
 import * as PIXI from "pixi.js";
 const app = new PIXI.Application();
 
+require("fish2.png");
+
 async function test(container) {
   await PIXI.Assets.load("fish2.png");
   let sprite = PIXI.Sprite.from("fish2.png");
