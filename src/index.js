@@ -5,8 +5,8 @@ import foo from "../assets/fish2.png";
 console.log(foo);
 
 async function test(container) {
-  await PIXI.Assets.load("../assets/fish2.png");
-  let sprite = PIXI.Sprite.from("../assets/fish2.png");
+  await PIXI.Assets.load(foo);
+  let sprite = PIXI.Sprite.from(foo);
   container.addChild(sprite);
 }
 
