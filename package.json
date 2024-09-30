@@ -2,10 +2,10 @@
   "name": "simple-pixijs-application-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --no-optimize --no-scope-hoist"
   },
   "dependencies": {
     "@pixi/layers": "1.0.11",
@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1"
+    "parcel": "^2.12.0"
   },
   "keywords": []
 }
