@@ -1,10 +1,11 @@
 import * as PIXI from "pixi.js";
 const app = new PIXI.Application();
 
+//import foo from "/assets/*.png";
+
 async function test(container) {
-  let url = new URL("../fish2.png", import.meta.url);
-  await PIXI.Assets.load(url);
-  let sprite = PIXI.Sprite.from(url);
+  await PIXI.Assets.load("/assets/fish2.png");
+  let sprite = PIXI.Sprite.from("/assets/fish2.png");
   container.addChild(sprite);
 }
 
