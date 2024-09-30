@@ -1,7 +1,8 @@
 import * as PIXI from "pixi.js";
 const app = new PIXI.Application();
 
-//import foo from "/assets/*.png";
+import foo from "/assets/*.png";
+console.log(foo);
 
 async function test(container) {
   await PIXI.Assets.load("/assets/fish2.png");
